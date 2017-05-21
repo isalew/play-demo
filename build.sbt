@@ -11,3 +11,12 @@ libraryDependencies ++= Seq(
   cache,
   javaWs
 )
+
+// Play provides two styles of routers, one expets its actions to be injected, the
+// other, legacy style, accesses its actions statically.
+// routesGenerator := InjectedRoutesGenerator
+
+enablePlugins(DebianPlugin)
+maintainer := "Isaac Lewis <isajlew@gmail.com>"
+packageSummary := "My custom package"
+packageDescription := "Package"
